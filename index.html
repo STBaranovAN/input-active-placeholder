@@ -1,0 +1,35 @@
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Active Placeholder</title>
+		
+        <link href="bootstrap_3.3.5/css/bootstrap.min.css" rel="stylesheet">
+		<link href="input-active-placeholder/input-active-placeholder.css" rel="stylesheet">
+	</head>
+	
+	<body>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group no-horizontal-padding">
+        <input active-placeholder id="username" name="username" type="text" class="form-control" tabindex="0">
+        <span class="placeholder">Username</span>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group no-horizontal-padding">
+        <input active-placeholder id="password" name="password" type="password" class="form-control" autocomplete="off">
+        <span class="placeholder">Password</span>
+    </div>
+	
+	<script src="jquery_1.11.3/jquery-1.11.3.js"></script>
+    <script src="bootstrap_3.3.5/js/bootstrap.min.js"></script>
+	<script src="input-active-placeholder/input-active-placeholder.js"></script>
+	
+	<script>
+        $(document).ready(function () {
+            $("[name=\"username\"]").biaActivePlaceholder();
+            $("[name=\"password\"]").biaActivePlaceholder();
+        });
+
+    </script>
+	
+	</body>
+</html>

@@ -1,0 +1,80 @@
+//
+// Input styles (active placeholder)
+// --------------------------------------------------
+
+input.form-control, textarea.form-control {
+  box-shadow: none;
+  background-color: transparent;
+  color: #303030;
+  border-radius: 4px;
+  text-indent: 0;
+  font-size: 18px;
+  z-index: 1;
+  position: relative;
+  padding: 6px 10px 0;
+  max-width: 370px;
+  height: 50px;
+  line-height: 30px;
+  -webkit-appearance: none; }
+  input.form-control ~ span.placeholder, textarea.form-control ~ span.placeholder {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    max-width: 95%;
+    padding-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all .15s;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    letter-spacing: normal;
+    color: #919191; }
+  input.form-control:hover, textarea.form-control:hover {
+    cursor: pointer; }
+  input.form-control:focus, textarea.form-control:focus {
+    cursor: text; }
+    input.form-control:focus ~ span.placeholder, textarea.form-control:focus ~ span.placeholder {
+      font-size: 12px;
+      top: 4px;
+      line-height: 20px;
+      font-weight: 300; }
+  input.form-control:focus:hover, textarea.form-control:focus:hover {
+    cursor: text; }
+    input.form-control:focus:hover ~ span.placeholder, textarea.form-control:focus:hover ~ span.placeholder {
+      font-size: 12px;
+      line-height: 20px; }
+  input.form-control.input_full, textarea.form-control.input_full {
+    cursor: default;
+    font-size: 18px; }
+    input.form-control.input_full ~ span.placeholder, textarea.form-control.input_full ~ span.placeholder {
+      font-size: 12px;
+      line-height: 20px;
+      top: 4px;
+      font-weight: 300; }
+    input.form-control.input_full:hover, textarea.form-control.input_full:hover {
+      cursor: pointer; }
+      input.form-control.input_full:hover ~ span.placeholder, textarea.form-control.input_full:hover ~ span.placeholder {
+        font-size: 12px;
+        line-height: 20px;
+        top: 4px;
+        font-weight: 300; }
+    input.form-control.input_full:focus, textarea.form-control.input_full:focus {
+      cursor: default;
+      font-size: 18px;
+      cursor: text; }
+      input.form-control.input_full:focus ~ span.placeholder, textarea.form-control.input_full:focus ~ span.placeholder {
+        font-size: 12px;
+        line-height: 20px;
+        top: 4px;
+        font-weight: 300; }
+    input.form-control.input_full:focus:hover, textarea.form-control.input_full:focus:hover {
+      cursor: text; }
+      input.form-control.input_full:focus:hover ~ span.placeholder, textarea.form-control.input_full:focus:hover ~ span.placeholder {
+        font-size: 12px;
+        line-height: 20px;
+        top: 4px;
+        font-weight: 300; }
+
+

@@ -1,0 +1,110 @@
+//
+// Input styles (active placeholder)
+// --------------------------------------------------
+
+input.form-control, textarea.form-control {
+  box-shadow: none;
+  background-color: transparent;
+  color: $text-color;
+  border-radius: $border-radius-base;
+  text-indent: 0;
+  font-size: $font-size-base;
+  z-index: 1;
+  position: relative;
+  padding: 6px 10px 0;
+  max-width: 370px;
+  height: 50px;
+  line-height: 30px;
+  -webkit-appearance: none;
+
+  & ~ span.placeholder {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    max-width: 95%;
+    padding-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all .15s;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    letter-spacing: normal;
+    color: $placeholder-text-color;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    cursor: text;
+
+    & ~ span.placeholder {
+      font-size: 12px;
+      top: 4px;
+      line-height: 20px;
+      font-weight: 300;
+    }
+  }
+
+  &:focus:hover {
+    cursor: text;
+
+    & ~ span.placeholder {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+
+  &.input_full {
+    cursor: default;
+    font-size: 18px;
+
+    & ~ span.placeholder {
+      font-size: 12px;
+      line-height: 20px;
+      top: 4px;
+      font-weight: 300;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      & ~ span.placeholder {
+        font-size: 12px;
+        line-height: 20px;
+        top: 4px;
+        font-weight: 300;
+      }
+    }
+
+    &:focus {
+      cursor: default;
+      font-size: 18px;
+      cursor: text;
+
+
+      & ~ span.placeholder {
+        font-size: 12px;
+        line-height: 20px;
+        top: 4px;
+        font-weight: 300;
+      }
+    }
+
+    &:focus:hover {
+      cursor: text;
+
+      & ~ span.placeholder {
+        font-size: 12px;
+        line-height: 20px;
+        top: 4px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+
